@@ -33,13 +33,14 @@ These results demonstrate that a low-cost wrist-worn wearable can deliver accura
 ## Prerequisites
 
 ### Hardware
-- ESP32 Dev
-- MPU-6050 IMU Sensor
+- [ESP32 Dev](https://www.amazon.co.uk/dp/B0DJPZHZ1X?ref=ppx_yo2ov_dt_b_fed_asin_title)  
+- [MPU-6050 IMU Sensor](https://www.amazon.co.uk/Generic-MPU-6050-GY-521-Accelerometer-Gyroscope/dp/B0DLTZJRB3/)  
 
 ### Software
-- Python
-- Visual Studio Code
-- PlatformIO IDE extension for VS Code
+- [Python](https://www.python.org/downloads/)  
+- [Visual Studio Code](https://code.visualstudio.com/)  
+- [PlatformIO IDE](https://platformio.org/) extension for VS Code
+
 
 ## Installation
 
@@ -122,3 +123,6 @@ pio run --target upload
 
 ### 5. Happy Swinging (Not literally!)
 Develop your technique, gain insights into your strokes, and test your swing tempo in Game Mode.
+
+## Acknowledgements
+Special thanks to [Dr. David Boyle](https://profiles.imperial.ac.uk/david.boyle) for your time and guidance.
