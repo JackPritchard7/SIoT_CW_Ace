@@ -20,3 +20,9 @@ The use of sensors in sports provide both perfor mance analytics and real-time f
 - **export_tflite.py** – exports trained model to TensorFlow Lite format.
 - **ACETennis** – mobile app source code.
 
+## Prerequisites
+- **Hardware:**
+  - [ESP32 DevKit V1](https://www.espressif.com/en/products/devkits/esp32-devkitv1/overview)
+  - [MPU-6050 IMU Sensor](https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/)
+
+
