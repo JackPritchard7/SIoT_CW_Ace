@@ -45,8 +45,8 @@ These results demonstrate that a low-cost wrist-worn wearable can deliver accura
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/<JackPritchard7/<SIoT_CW_Ace>.git
+cd <SIoT_CW_Ace>
 ```
 
 ### 2. Install Python Dependencies
