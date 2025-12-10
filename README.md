@@ -33,5 +33,14 @@ The use of sensors in sports provide both perfor mance analytics and real-time f
   - [PlatformIO IDE](https://platformio.org/) extension for VS Code
 
 
+## Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+
+
+
 
 
