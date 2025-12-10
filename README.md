@@ -20,9 +20,11 @@ The use of sensors in sports provide both perfor mance analytics and real-time f
 - **export_tflite.py** – exports trained model to TensorFlow Lite format.
 - **ACETennis** – mobile app source code.
 
+
 ## Prerequisites
 - **Hardware:**
-  - [ESP32 DevKit V1]([https://www.espressif.com/en/products/devkits/esp32-devkitv1/overview](https://www.amazon.co.uk/dp/B0DJPZHZ1X?ref=ppx_yo2ov_dt_b_fed_asin_title))
-  - [MPU-6050 IMU Sensor]([https://invensense.tdk.com/products/motion-tracking/6-axis/mpu-6050/](https://www.amazon.co.uk/Generic-MPU-6050-GY-521-Accelerometer-Gyroscope/dp/B0DLTZJRB3/ref=sr_1_2_sspa?crid=304SD71BFXSMO&dib=eyJ2IjoiMSJ9.Bz_EUOSGrrgaJ-RvW_TVzXq8hmEKcGqdIZO8T79s5CdU-3IpqLB227nOb3hox5LZ7bZVS-oOyeBpaMeTO7NNyoKD1KJdRGRJT3QMvQnrjKk6xjKAndRJBrsOKHS0zjJ2tTq4c-lJsd9HHGchLw8mtI4F9KzPnJwSumPB-ZU2_1pwci5VKwB8QV1TonCRAqotyuJOsYJg4IkQGxc3c1ckKZqFyNv6s1ZJc-oiABJy0H6LofwgNzqGoXk0OEeKndz1HdgLajeha5nU1YwOmz66eyGN6f5I0XZQYh4JGoSmnk8.a1ZwH3W1mnlyd5GERnoh8BIBlUpbCIVjDA7OU7o7_8w&dib_tag=se&keywords=MPU6050&qid=1765391160&sprefix=mpu6050%2Caps%2C101&sr=8-2-spons&aref=f5TQIrwQql&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1))
+  - [ESP32 DevKit V1](https://www.amazon.co.uk/dp/B0DJPZHZ1X?ref=ppx_yo2ov_dt_b_fed_asin_title)
+  - [MPU-6050 IMU Sensor](https://www.amazon.co.uk/Generic-MPU-6050-GY-521-Accelerometer-Gyroscope/dp/B0DLTZJRB3/)
+
 
 
