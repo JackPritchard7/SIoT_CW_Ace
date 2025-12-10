@@ -28,7 +28,7 @@ The use of sensors in sports provide both perfor mance analytics and real-time f
   - [MPU-6050 IMU Sensor](https://www.amazon.co.uk/Generic-MPU-6050-GY-521-Accelerometer-Gyroscope/dp/B0DLTZJRB3/)
 
 - **Software:**
-  - [Python](https://www.python.org/downloads/) (with required packages listed in `requirements.txt`)
+  - [Python](https://www.python.org/downloads/) 
   - [Visual Studio Code](https://code.visualstudio.com/)
   - [PlatformIO IDE](https://platformio.org/) extension for VS Code
 
