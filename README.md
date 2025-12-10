@@ -13,9 +13,10 @@ The use of sensors in sports provide both perfor mance analytics and real-time f
 
 # File Explanations
 
-Ace_ESP32_Data_Collection.ino
-main.cpp
-Ace_Classifier_NN.ipynb
-convert_to_header.py
-export_tflite.py
-ACETennis
+- **Ace_ESP32_Data_Collection.ino** – collects time-series IMU data from the ESP32 and stores in a locally hosted InfluxDB instance.
+- **Ace_Classifier_NN.ipynb** – notebook for training and evaluating the neural network classifier.
+- **main.cpp** – real-time classification and BLE transmission.
+- **convert_to_header.py** – converts TFLite model into C header format for microcontroller deployment.
+- **export_tflite.py** – exports trained model to TensorFlow Lite format.
+- **ACETennis** – mobile app source code.
+
