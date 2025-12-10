@@ -93,7 +93,7 @@ pio run --target upload
 3. Fill out InfluxDB configuration
 4. Upload to ESP32
 5. Power the ESP32 and begin collecting data
-6. Run `InfluxDB_Download_CS` in the terminal to download CSV files
+6. When finished, download the CSV files
 7. Rename and organise your data into:
    - Forehand
    - Backhand
@@ -119,3 +119,6 @@ pio run --target upload
 2. Select your bucket
 3. Select your measurement
 4. Download stored data as needed
+
+### 5. Happy Swinging (Not literally!)
+Develop your technique, gain insights into your strokes, and test your swing tempo in Game Mode.
