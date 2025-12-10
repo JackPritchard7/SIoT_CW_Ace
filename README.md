@@ -22,9 +22,16 @@ The use of sensors in sports provide both perfor mance analytics and real-time f
 
 
 ## Prerequisites
+
 - **Hardware:**
-  - [ESP32 DevKit V1](https://www.amazon.co.uk/dp/B0DJPZHZ1X?ref=ppx_yo2ov_dt_b_fed_asin_title)
+  - [ESP32 Dev](https://www.amazon.co.uk/dp/B0DJPZHZ1X?ref=ppx_yo2ov_dt_b_fed_asin_title)
   - [MPU-6050 IMU Sensor](https://www.amazon.co.uk/Generic-MPU-6050-GY-521-Accelerometer-Gyroscope/dp/B0DLTZJRB3/)
+
+- **Software:**
+  - [Python](https://www.python.org/downloads/) (with required packages listed in `requirements.txt`)
+  - [Visual Studio Code](https://code.visualstudio.com/)
+  - [PlatformIO IDE](https://platformio.org/) extension for VS Code
+
 
 
 
