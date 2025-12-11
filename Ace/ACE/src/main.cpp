@@ -75,6 +75,8 @@ State state = IDLE;
 unsigned long lastDetectionMs = 0;
 unsigned long collectUntilMs = 0;
 int totalShots = 0;
+float capturedPeakAccel = 0.0f;
+float capturedPeakGyro = 0.0f;
 
 // ====================================================
 // Feature Extraction
@@ -403,15 +405,11 @@ void classifyShot() {
   const char* labels[] = {"Backhand", "Forehand", "Serve"};
   const char* stroke = labels[best_idx];
   
-  // Calculate metrics
-  float max_accel = 0, max_gyro = 0;
-  for (int i = 0; i < WINDOW_SIZE; i++) {
-    max_accel = max(max_accel, ring[i].Amag);
-    max_gyro = max(max_gyro, ring[i].Gmag);
-  }
+  // Use captured peak values (not stale buffer data)
+  float swing_mph = constrain(capturedPeakAccel * 2.2f, 0.0f, 120.0f);
+  float spin_dps = capturedPeakGyro;
   
-  float swing_mph = constrain(max_accel * 2.2f, 0.0f, 120.0f);
-  float spin_dps = max_gyro;
+  Serial.printf("🔍 Peak acceleration: %.2f m/s² → %.1f mph\n", capturedPeakAccel, swing_mph);
   
   // Print result
   totalShots++;
@@ -522,12 +520,18 @@ void loop() {
     case IDLE:
       if (s.Amag > MOTION_TRIGGER && (now - lastDetectionMs) > COOLDOWN_MS) {
         Serial.printf("⚡ Motion detected: %.1f m/s²\n", s.Amag);
+        capturedPeakAccel = s.Amag;
+        capturedPeakGyro = s.Gmag;
         collectUntilMs = now + POST_COLLECT_MS;
         state = COLLECTING;
       }
       break;
       
     case COLLECTING:
+      // Track peak values during collection window
+      if (s.Amag > capturedPeakAccel) capturedPeakAccel = s.Amag;
+      if (s.Gmag > capturedPeakGyro) capturedPeakGyro = s.Gmag;
+      
       if (now >= collectUntilMs && ringCount >= WINDOW_SIZE) {
         classifyShot();
         lastDetectionMs = now;
