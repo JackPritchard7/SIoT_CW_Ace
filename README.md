@@ -2,7 +2,7 @@
 
 ## Realtime Tennis Stroke Classifier Pipeline
 
-The main repository for the Sensing and the Internet of Things project by Jack Pritchard.
+The main repository for the Sensing and the Internet of Things coursework, by Jack Pritchard.
 
 ## Abstract
 
