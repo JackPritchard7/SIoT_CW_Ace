@@ -11,7 +11,7 @@
 #define ENABLE_BLE          true
 #define SAMPLE_HZ          100.0f // Must match Classifier
 #define WINDOW_SIZE        150 // Must match Classifier
-#define MOTION_TRIGGER     22.0f // Must match Classifier
+#define MOTION_TRIGGER     21.0f // Must match Classifier
 #define COOLDOWN_MS        2000
 #define POST_COLLECT_MS    700
 
